@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Two Sum</title>
+</head>
+<body>
+    <h1>Two Sum Problem</h1>
+    <form action="{% url 'result' %}" method="post">
+        {% csrf_token %}
+        <label for="nums">Numbers (comma separated):</label>
+        <input type="text" id="nums" name="nums" required><br>
+        <label for="target">Target:</label>
+        <input type="text" id="target" name="target" required><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
